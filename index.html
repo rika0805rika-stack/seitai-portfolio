@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>からだ整えラボ円山｜柔道整復師の院長が施術を担当する整体院（制作サンプル）</title>
+<meta name="description" content="柔道整復師の院長が施術を担当する、札幌・円山の整体院のLP制作サンプルです。腰痛・肩こり・産後の骨盤まわりが気になる方へ、初回20分のカウンセリングから始めます。※架空の店舗です。">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="からだ整えラボ円山｜整体院LP 制作サンプル">
+<meta property="og:description" content="柔道整復師の院長が施術を担当する、札幌・円山の整体院を想定したLPの制作サンプルです（架空の店舗）。">
+<meta property="og:url" content="https://rika0805rika-stack.github.io/seitai-portfolio/">
+<meta property="og:image" content="https://rika0805rika-stack.github.io/seitai-portfolio/images/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- favicon（SVGをインラインで指定） -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230f6b64'/%3E%3Ctext x='32' y='43' font-size='32' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E円%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ================================================================
+     基本設定（モバイルファースト：375px基準 → min-widthで拡張）
+     ================================================================ */
+  :root {
+    --teal-900: #0b3d3a;
+    --teal-700: #0f6b64;
+    --teal-600: #14807a;
+    --teal-500: #1c9a92;
+    --teal-100: #e3f3f1;
+    --teal-50: #f3faf9;
+    --ink: #1e2b2a;
+    --ink-soft: #4a5a58;
+    --paper: #ffffff;
+    --line: #d9e9e6;
+    --line-green: #057d38; /* LINE緑を暗くして白文字のコントラスト比5.25:1を確保 */
+    --sample: #9a4b0c;
+    --sample-bg: #fdf1e4;
+    --radius: 14px;
+    --shadow: 0 8px 30px rgba(11,61,58,0.08);
+    --maxw: 1080px;
+    --bar-h: 60px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: "Noto Sans JP", -apple-system, "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom));
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  p { margin: 0; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+  .nb { display: inline-block; } /* 文節単位で改行させるためのspan */
+  .sp-br { display: inline; }    /* スマホのみ有効な改行 */
+
+  /* ================================================================
+     セクション共通
+     ================================================================ */
+  section { padding: 56px 0; }
+  .section-head { text-align: center; margin-bottom: 32px; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.875rem;
+    letter-spacing: 0.18em;
+    color: var(--teal-600);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 1.375rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--teal-900);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .bg-soft { background: var(--teal-50); }
+  .note { font-size: 0.875rem; color: var(--ink-soft); }
+
+  /* サンプル表記用のラベル */
+  .sample-tag {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--sample);
+    background: var(--sample-bg);
+    border: 1px solid #f0cfa8;
+    border-radius: 6px;
+    padding: 2px 8px;
+    letter-spacing: 0.04em;
+  }
+
+  /* 画像枠＋AI生成キャプション */
+  .photo { margin: 0; }
+  .photo .frame {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--teal-100);
+    box-shadow: var(--shadow);
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .photo figcaption { font-size: 0.875rem; color: var(--ink-soft); margin-top: 8px; text-align: right; }
+
+  /* ================================================================
+     ボタン
+     ================================================================ */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 52px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  }
+  .btn:hover { filter: brightness(1.08); box-shadow: 0 6px 18px rgba(11,61,58,0.25); }
+  .btn:active { transform: scale(0.97); }
+  .btn:focus-visible { outline: 3px solid var(--teal-500); outline-offset: 3px; }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-line { background: var(--line-green); color: #fff; box-shadow: 0 4px 14px rgba(5,125,56,0.3); }
+  .btn-tel { background: var(--teal-700); color: #fff; box-shadow: 0 4px 14px rgba(15,107,100,0.3); }
+  .btn-sm { min-height: 44px; padding: 8px 16px; font-size: 0.875rem; }
+  .cta-row { display: flex; flex-direction: column; gap: 10px; }
+  .cta-row .btn { width: 100%; }
+
+  /* ================================================================
+     ヘッダー
+     ================================================================ */
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    max-width: var(--maxw);
+    margin: 0 auto;
+  }
+  .brand { font-weight: 700; color: var(--teal-900); font-size: 1.0625rem; line-height: 1.4; }
+  .brand small { display: block; font-size: 0.875rem; color: var(--teal-600); font-weight: 500; letter-spacing: 0.06em; }
+  .nav-cta { display: none; gap: 8px; }
+
+  /* ================================================================
+     1. ファーストビュー
+     ================================================================ */
+  .hero {
+    position: relative;
+    background: linear-gradient(180deg, var(--teal-50) 0%, #ffffff 80%);
+    padding: 24px 0 48px;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, var(--teal-100) 0%, transparent 70%);
+  }
+  .hero-inner { position: relative; text-align: center; }
+  .badge-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 14px; }
+  .badge {
+    background: #fff;
+    border: 1px solid var(--teal-500);
+    color: var(--teal-700);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 5px 12px;
+    border-radius: 999px;
+  }
+  .hero h1 {
+    font-size: 1.625rem;
+    line-height: 1.5;
+    color: var(--teal-900);
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+  .hero h1 .accent { color: var(--teal-600); }
+  .hero-sub { font-weight: 700; color: var(--teal-900); line-height: 1.7; margin-bottom: 8px; }
+  .hero-text { color: var(--ink-soft); line-height: 1.75; margin: 0 auto 20px; max-width: 36em; }
+  .hero-note { margin-top: 12px; font-size: 0.875rem; color: var(--ink-soft); line-height: 1.7; }
+  .hero-photo { margin: 32px -20px 0; } /* スマホは画面の端まで広げる */
+  .hero-photo .frame { aspect-ratio: 32 / 17; border-radius: 0; border-left: 0; border-right: 0; }
+  .hero-photo figcaption { padding: 0 20px; }
+
+  /* ================================================================
+     2. 共感チェックリスト
+     ================================================================ */
+  .check-list { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+  .check-item .mark {
+    flex: none;
+    width: 26px; height: 26px;
+    border-radius: 7px;
+    border: 2px solid var(--teal-500);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--teal-600);
+    margin-top: 2px;
+  }
+
+  /* ================================================================
+     3. 原因
+     ================================================================ */
+  .cause-block {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-left: 4px solid var(--teal-500);
+    border-radius: 0 12px 12px 0;
+    padding: 24px 20px;
+    box-shadow: var(--shadow);
+  }
+
+  /* ================================================================
+     4. 解決策カード / 5. 選ばれる理由 / 7. お客様の声（共通グリッド）
+     ================================================================ */
+  .grid-3 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .sym-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sym-card .icon {
+    width: 60px; height: 60px;
+    background: var(--teal-100);
+    color: var(--teal-700);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sym-card .icon svg { width: 36px; height: 36px; }
+  .sym-card h3 { margin: 0; font-size: 1.0625rem; color: var(--teal-900); }
+  .sym-card p { color: var(--ink-soft); }
+  .common-note {
+    margin-top: 20px;
+    background: var(--teal-50);
+    border-radius: 12px;
+    padding: 16px 20px;
+    color: var(--teal-900);
+    font-weight: 500;
+  }
+
+  .reason-card { text-align: center; padding: 8px 4px; }
+  .reason-num {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: var(--teal-700);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1.2rem;
+    margin: 0 auto 12px;
+  }
+  .reason-card h3 { color: var(--teal-900); font-size: 1.0625rem; margin: 0 0 6px; }
+  .reason-card p { color: var(--ink-soft); }
+
+  /* 中盤CTA */
+  .mid-cta {
+    margin-top: 40px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .mid-cta p { color: var(--teal-900); font-weight: 700; margin-bottom: 16px; }
+
+  /* ================================================================
+     6. 院長プロフィール
+     ================================================================ */
+  .profile-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: center; }
+  .profile-photo { max-width: 320px; margin: 0 auto; width: 100%; }
+  .profile-photo .frame { aspect-ratio: 1 / 1; }
+  .profile-role { color: var(--teal-600); font-weight: 700; font-size: 0.875rem; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .profile-name { font-size: 1.3rem; color: var(--teal-900); font-weight: 700; margin: 0 0 12px; }
+  .profile-text { color: var(--ink-soft); }
+  .profile-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .profile-note { margin-top: 14px; }
+
+  /* ================================================================
+     7. お客様の声（サンプル）
+     ================================================================ */
+  .voice-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--teal-500);
+    border-bottom: 4px solid var(--teal-500);
+  }
+  .voice-card .sample-tag { margin-bottom: 10px; }
+  .voice-title { color: var(--teal-900); font-size: 1.0625rem; margin: 0 0 8px; font-weight: 700; }
+  .voice-quote { margin-bottom: 12px; }
+  .voice-who { color: var(--teal-700); font-weight: 700; font-size: 0.875rem; }
+  .voice-head-tag { margin-top: 10px; }
+  .voice-note { margin-top: 20px; text-align: center; }
+
+  /* ================================================================
+     8. 料金
+     ================================================================ */
+  .price-table {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .price-table th, .price-table td { padding: 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .price-table thead th { background: var(--teal-900); color: #fff; font-size: 0.875rem; letter-spacing: 0.04em; }
+  .price-table tbody tr:last-child td { border-bottom: none; }
+  .price-table tbody tr.highlight { background: var(--teal-50); }
+  .price-name { font-weight: 700; color: var(--teal-900); }
+  .price-amount { font-weight: 700; color: var(--teal-700); font-size: 1.125rem; white-space: nowrap; text-align: right !important; }
+  .price-sub { display: block; font-size: 0.875rem; color: var(--ink-soft); font-weight: 400; margin-top: 2px; }
+  .price-note { text-align: center; margin-top: 16px; }
+
+  /* ================================================================
+     9. アクセス
+     ================================================================ */
+  .access-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  .access-photo .frame { aspect-ratio: 4 / 3; }
+  .info-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .info-list li { display: flex; gap: 14px; align-items: flex-start; }
+  .info-list .icon { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--teal-100); color: var(--teal-700); display: flex; align-items: center; justify-content: center; }
+  .info-list .icon svg { width: 20px; height: 20px; }
+  .info-list .label { display: block; font-size: 0.875rem; color: var(--teal-600); font-weight: 700; }
+  .info-list .val { color: var(--ink); font-weight: 500; }
+  .info-list .val small { display: block; font-size: 0.875rem; color: var(--ink-soft); font-weight: 400; }
+
+  /* ================================================================
+     10. よくある質問
+     ================================================================ */
+  .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+  details.faq-item { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  details.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    color: var(--teal-900);
+    min-height: 56px;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  .q-mark {
+    flex: none;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--teal-700);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.875rem;
+  }
+  .chev { margin-left: auto; transition: transform 0.2s ease; color: var(--teal-500); flex: none; }
+  details.faq-item[open] .chev { transform: rotate(180deg); }
+  .faq-a { padding: 0 16px 18px 56px; color: var(--ink-soft); }
+
+  /* ================================================================
+     11. クロージング
+     ================================================================ */
+  .closing { background: var(--teal-900); color: #eaf5f3; text-align: center; }
+  .closing .eyebrow { color: #7fd6cc; }
+  .closing h2 { color: #fff; }
+  .closing-text { max-width: 560px; margin: 14px auto 28px; color: #cfe6e2; }
+  .closing .cta-row { max-width: 420px; margin: 0 auto; }
+  .closing-detail { margin-top: 24px; color: #9dc7c1; font-size: 0.875rem; }
+
+  /* ================================================================
+     フッター（制作サンプル表記・クレジット）
+     ================================================================ */
+  footer.site { background: #082a28; color: #9dc7c1; padding: 32px 0 28px; font-size: 0.875rem; text-align: center; }
+  footer.site .fbrand { color: #fff; font-weight: 700; margin-bottom: 10px; }
+  footer.site .disclaimer { color: #cfe6e2; margin-bottom: 10px; }
+  footer.site .credit { margin-top: 10px; color: #cfe6e2; }
+
+  /* ================================================================
+     追従CTAバー（スマホのみ／FVのCTAとクロージングが見えている間は隠す）
+     ================================================================ */
+  .mobile-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 60;
+    display: flex;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--teal-900);
+    box-shadow: 0 -4px 18px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease;
+  }
+  .mobile-cta.is-hidden { transform: translateY(110%); }
+  .mobile-cta button {
+    flex: 1;
+    min-height: var(--bar-h);
+    border: 0;
+    font: inherit;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 6px;
+  }
+  .mobile-cta .m-line { background: var(--line-green); }
+  .mobile-cta .m-tel { background: var(--teal-700); }
+
+  /* サンプルリンクを押したときのお知らせ */
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(var(--bar-h) + 16px + env(safe-area-inset-bottom));
+    transform: translate(-50%, 20px);
+    width: calc(100% - 40px);
+    max-width: 420px;
+    background: var(--ink);
+    color: #fff;
+    font-size: 0.9375rem;
+    text-align: center;
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 70;
+  }
+  .toast.is-show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* ================================================================
+     768px以上（タブレット）
+     ================================================================ */
+  @media (min-width: 768px) {
+    body { padding-bottom: 0; }
+    .wrap { padding: 0 32px; }
+    .sp-br { display: none; }
+    section { padding: 80px 0; }
+    .section-head { margin-bottom: 44px; }
+    h2 { font-size: 1.875rem; }
+    .nav-row { padding: 12px 32px; }
+    .nav-cta { display: flex; }
+    .mobile-cta { display: none; }
+    .toast { bottom: 32px; }
+
+    .hero { padding: 56px 0 72px; }
+    .hero h1 { font-size: 2.375rem; }
+    .hero-sub { font-size: 1.125rem; }
+    .hero-photo { max-width: 880px; margin: 40px auto 0; }
+    .hero-photo .frame { border-radius: var(--radius); border: 1px solid var(--line); }
+    .hero-photo figcaption { padding: 0; }
+    .cta-row { flex-direction: row; justify-content: center; }
+    .cta-row .btn { width: auto; padding: 14px 32px; }
+
+    .cause-block { padding: 30px 32px; }
+    .mid-cta { padding: 32px; }
+    .profile-grid { grid-template-columns: 280px 1fr; gap: 40px; }
+    .profile-photo { max-width: none; }
+    .access-grid { grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+    .price-table th, .price-table td { padding: 20px 24px; }
+    details.faq-item summary { padding: 18px 22px; }
+    .faq-a { padding: 0 22px 20px 62px; }
+  }
+
+  /* ================================================================
+     1024px以上（PC）
+     ================================================================ */
+  @media (min-width: 1024px) {
+    .grid-3 { grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .hero h1 { font-size: 2.625rem; }
+    .profile-text { max-width: 38em; } /* 1行の長さを40字以内に */
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     ヘッダー
+     ================================================================ -->
+<header class="site">
+  <div class="nav-row">
+    <div class="brand">からだ整えラボ円山<small>柔道整復師の院長が施術を担当する整体院</small></div>
+    <div class="nav-cta">
+      <button type="button" class="btn btn-line btn-sm" data-sample="line">LINEで空き日時を聞く</button>
+      <button type="button" class="btn btn-tel btn-sm" data-sample="tel">初回60分を電話で予約</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================================================================
+     1. ファーストビュー
+     ================================================================ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-inner">
+    <div class="badge-row">
+      <span class="badge">柔道整復師</span>
+      <span class="badge">開業5年目</span>
+      <span class="badge">臨床10年</span>
+    </div>
+    <h1 id="hero-title"><span class="nb">「<span class="accent">整体って怪しい</span>」と</span><span class="nb">思ったら、</span><br><span class="nb">まず資格を</span><span class="nb">見てください。</span></h1>
+    <p class="hero-sub"><span class="nb">柔道整復師の院長が施術を担当する、</span><span class="nb">札幌・円山の整体院です。</span></p>
+    <p class="hero-text"><span class="nb">腰痛・肩こり・産後の骨盤まわりが</span><span class="nb">気になる方へ。</span><span class="nb">最初の20分で今の状態をうかがい、</span><span class="nb">納得してから施術を受けられます。</span></p>
+
+    <div class="cta-row">
+      <button type="button" class="btn btn-line" data-sample="line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        LINEで空き日時を聞く
+      </button>
+      <button type="button" class="btn btn-tel" data-sample="tel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        初回60分を電話で予約
+      </button>
+    </div>
+    <p class="hero-note"><span class="nb">LINEは24時間受付｜</span><span class="nb">9:00〜20:00（日曜定休）｜</span><span class="nb">駐車場2台</span><br><span class="nb">※店舗・人物・経歴・料金は</span><span class="nb">すべて架空の設定です</span></p>
+
+    <figure class="photo hero-photo">
+      <div class="frame">
+        <img src="images/clinic-reception-1280.webp"
+             srcset="images/clinic-reception-640.webp 640w, images/clinic-reception-1280.webp 1280w"
+             sizes="(min-width: 944px) 880px, (min-width: 768px) calc(100vw - 64px), 100vw"
+             alt="木の温もりと緑を取り入れた、明るく落ち着いた受付のイメージ" width="1280" height="680" fetchpriority="high">
+      </div>
+      <figcaption>※AIで生成したイメージです</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================================================================
+     2. 共感（こんなことありませんか）
+     ================================================================ -->
+<section aria-labelledby="empathy-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">EMPATHY</span>
+      <h2 id="empathy-title">こんなこと、ありませんか</h2>
+    </div>
+    <div class="check-list">
+      <div class="check-item"><span class="mark" aria-hidden="true">✓</span><p>座りっぱなしの一日の終わりに、腰が重く感じる</p></div>
+      <div class="check-item"><span class="mark" aria-hidden="true">✓</span><p>肩から首にかけて、常に張っている気がする</p></div>
+      <div class="check-item"><span class="mark" aria-hidden="true">✓</span><p>産後、骨盤まわりのことが何となく気になっている</p></div>
+      <div class="check-item"><span class="mark" aria-hidden="true">✓</span><p>整体に興味はあるけれど、どんな所か分からず足が向かない</p></div>
+      <div class="check-item"><span class="mark" aria-hidden="true">✓</span><p>チラシは見たことがあるが、電話するまでの一歩が出ない</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     3. 原因
+     ================================================================ -->
+<section class="bg-soft" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">WHY</span>
+      <h2 id="why-title">我慢していたのは、<br class="sp-br">怠けていたからではありません</h2>
+    </div>
+    <div class="cause-block">
+      <p>仕事や育児の合間に、自分の身体は後回しになりがちです。整体院は数多くあり、どこが自分に合うのか分からないまま、チラシを見ただけで終わってしまうことも珍しくありません。からだ整えラボ円山では、まず20分のカウンセリングで今の状態や生活習慣をうかがうところから始めます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     4. 解決策の提示（効果はうたわず、カウンセリングと施術の流れのみ）
+     ================================================================ -->
+<section aria-labelledby="approach-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">APPROACH</span>
+      <h2 id="approach-title">あなたの状態に合わせて、<br class="sp-br">話を聞くところから</h2>
+    </div>
+    <div class="grid-3">
+      <div class="sym-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 512 512" fill="currentColor"><path d="M54.726,96.776c26.718,0,48.389-21.665,48.389-48.388C103.114,21.665,81.444,0,54.726,0 C28.003,0,6.337,21.665,6.337,48.389C6.337,75.112,28.003,96.776,54.726,96.776z"></path><path d="M301.32,79.438l-110.641-8.353c-59.428-0.414-113.957,27.86-127.658,68.495v0.017l-48.768,147.95 c-3.114,9.921,2.397,20.494,12.322,23.604c9.929,3.119,20.493-2.405,23.616-12.326l59.006-123.166 c4.634-5.507,8.798-3.365,10.242-2.052c8.89,8.132,26.926,37.639,30.274,53.005c2.639,12.079-3.3,29.744-10.256,42.97 l-43.556,73.851c-3.714,6.203-6.793,12.758-6.537,18.705l8.022,127.774c0,12.193,9.886,22.088,22.092,22.088 c12.199,0,22.094-9.895,22.094-22.088l7.551-117.042l55.565-75.279c0.449-0.696,2.942-2.228,1.643,1.842 c-0.023,0.053-9.974,41.807-9.974,41.807c-1.643,5.463-1.554,9.27-1.506,13.754l9.392,127.667 c0.137,12.203,10.133,21.983,22.327,21.851c12.207-0.132,21.995-10.132,21.859-22.336l6.423-121.182l27.908-78.539 c16.115-42.521-27.062-132.478-51.648-155.43h45.833l2.582,77.798c-0.688,9.331,6.334,17.454,15.67,18.124 c9.335,0.688,17.459-6.326,18.128-15.665c0,0,9.322-102.557,9.369-103.139C323.616,91.42,314.043,80.353,301.32,79.438z"></path><polygon points="396.485,140.857 442.058,85.798 425.23,75.666 372.216,144.769 388.053,153.262 342.598,206.682 355.348,213.299 413.269,150.769 "></polygon><polygon points="505.663,198.083 496.544,180.664 415.326,212.127 424.455,227.625 357.85,249.634 365.304,261.908 447.296,238.604 438.106,221.396 "></polygon></svg>
+        </div>
+        <h3>腰痛でお悩みの方へ</h3>
+        <p>座り仕事の姿勢や生活リズムをうかがいながら、施術内容を組み立てます。</p>
+      </div>
+      <div class="sym-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 512 512" fill="currentColor"><path d="M324.994,398.715l-15.781-58.891c0.375-1.609,0.719-3.219,1.016-4.859 c12.328-68.234-32.969-133.563-101.219-145.891C140.791,176.73,75.462,222.043,63.119,290.262 c-6.922,38.375,4.359,75.813,27.703,103.453l-7.906,43.656c-0.766,4.266,1.078,8.578,4.703,10.938l94.469,61.922 c3.031,1.984,6.844,2.328,10.172,0.906c3.328-1.438,5.703-4.438,6.359-8l6.688-37c1.063-5.859,6.672-9.766,12.531-8.688 l52.406,9.469c5.859,1.047,11.469-2.844,12.531-8.703l5.766-31.906c0.734-4.047,3.719-7.344,7.703-8.469l21.234-5.953 C323.181,410.293,326.509,404.418,324.994,398.715z"></path><polygon points="450.9,119.855 369.853,159.762 385.478,182.355 341.072,233.012 422.134,193.09 406.509,170.512 "></polygon><polygon points="326.619,29.34 266.103,96.418 288.978,111.621 266.509,175.121 327.025,108.043 304.134,92.824 "></polygon><polygon points="157.134,-0.004 135.556,87.73 162.916,90.324 173.134,156.887 194.712,69.152 167.369,66.574 "></polygon></svg>
+        </div>
+        <h3>肩こりでお悩みの方へ</h3>
+        <p>デスクワークやスマホ操作による負担のかかり方は人それぞれです。カウンセリングで生活習慣を確認してから施術に入ります。</p>
+      </div>
+      <div class="sym-card">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 512 512" fill="currentColor"><circle cx="219.869" cy="183.266" r="9.765"></circle><path d="M292.131,173.5c-5.398,0-9.772,4.375-9.772,9.766s4.374,9.765,9.772,9.765c5.391,0,9.766-4.374,9.766-9.765 S297.523,173.5,292.131,173.5z"></path><path d="M358.949,157.488c-4.882-22.935-17.149-43.134-34.205-57.969c-18.627-16.2-43.02-26.032-69.647-26.032 c-26.587,0-50.94,9.798-69.554,25.958c-17.156,14.882-29.49,35.182-34.339,58.237c-7.076,0.923-13.444,4.207-18.233,8.989 c-5.725,5.733-9.29,13.712-9.29,22.46c0,8.729,3.565,16.715,9.29,22.44c5.725,5.725,13.705,9.284,22.447,9.284 c0.602,0,1.19-0.014,1.779-0.04c4.508,10.715,10.742,20.54,18.327,29.135l-1.204,0.89l101.071,136.226l11.764-8.735l-19.805-26.688 l65.394-96.662l-1.678-1.137c9.277-9.504,16.781-20.735,21.998-33.188c1.137,0.127,2.32,0.201,3.512,0.201 c8.741,0,16.714-3.559,22.439-9.284c5.726-5.725,9.298-13.711,9.298-22.44c0-8.748-3.572-16.728-9.298-22.46 C373.812,161.474,366.755,158.063,358.949,157.488z M243.385,88.897c3.839-0.488,7.746-0.756,11.712-0.756 c5.384,0,10.641,0.475,15.778,1.364c0.521,0.609,1.07,1.318,1.618,2.14c2.314,3.512,4.648,9.023,4.668,17.745 c0,6.601-1.391,15.07-5.31,25.724c-12.36-9.939-19.397-19.096-23.383-26.64c-4.334-8.227-5.117-14.581-5.124-18.26 C243.345,89.72,243.359,89.285,243.385,88.897z M234.556,90.455c0.034,4.977,1.191,12.762,6.14,22.119 c2.214,4.194,5.177,8.695,9.11,13.404c-3.933-1.585-7.866-3.063-11.572-4.628c-6.367-2.682-11.958-5.685-15.752-9.685 c-1.906-2-3.397-4.247-4.461-6.956c-0.883-2.254-1.445-4.882-1.619-7.993C222.156,94.027,228.229,91.907,234.556,90.455z M368.661,201.198c-3.123,3.103-7.344,5.01-12.086,5.01c-1.96,0-3.84-0.355-5.652-0.977l-6.943-2.448l-2.421,6.943 c-6.207,17.885-17.818,33.275-32.881,44.171c-3.946,2.856-8.114,5.411-12.494,7.604c0.307,2.007,0.455,4.034,0.455,6.094 c0,3.558-0.455,7.043-1.338,10.401c2.034-0.836,4.04-1.733,6.006-2.696L258.1,339.175l-46.438-62.592 c1.725,0.776,3.464,1.519,5.237,2.201c-1.03-3.586-1.552-7.351-1.552-11.19c0-1.772,0.114-3.545,0.347-5.27 c-4.922-2.348-9.591-5.124-13.965-8.274c-15.036-10.815-26.667-26.092-32.948-43.857l-2.267-6.421l-6.562,1.806 c-1.512,0.408-3.003,0.629-4.535,0.629c-4.736,0-8.976-1.906-12.08-5.01c-3.103-3.104-5.01-7.337-5.01-12.066 c0-4.749,1.907-8.983,5.01-12.086c3.103-3.11,7.344-5.01,12.08-5.01c0.301,0,0.736,0.034,1.351,0.074l6.809,0.528l1.016-6.736 c3.311-22.005,14.474-41.441,30.54-55.387c4.013-3.478,8.334-6.622,12.908-9.37c0.402,2.482,1.01,4.809,1.86,6.949 c1.351,3.391,3.25,6.327,5.492,8.842c3.933,4.401,8.849,7.498,13.986,10.039c7.718,3.793,16.052,6.415,23.055,9.685 c3.498,1.626,6.648,3.391,9.237,5.432c2.582,2.04,4.602,4.307,6.046,7.07c0.776,1.492,2.328,2.401,4.006,2.368 c1.679-0.04,3.178-1.023,3.88-2.555c7.605-16.461,10.334-29.41,10.34-39.583c0.013-6.936-1.291-12.554-3.137-16.969 c12.039,3.819,23.002,10.046,32.332,18.153c16.079,13.993,27.208,33.469,30.493,55.528l1.084,7.264l7.27-1.11 c0.964-0.147,1.806-0.221,2.589-0.221c4.742,0,8.962,1.9,12.086,5.01c3.103,3.103,4.99,7.337,5.01,12.086 C373.651,193.86,371.765,198.094,368.661,201.198z"></path><path d="M256,235.744c-8.776,0-16.788,3.579-22.527,9.33c-5.752,5.739-9.337,13.758-9.33,22.527 c-0.006,8.768,3.578,16.782,9.33,22.526c5.739,5.753,13.751,9.331,22.527,9.324c8.769,0.006,16.782-3.572,22.527-9.324 c5.752-5.745,9.324-13.758,9.324-22.526c0-8.769-3.572-16.788-9.324-22.527C272.782,239.322,264.769,235.744,256,235.744z M270.822,273.855c-1.218,2.876-3.264,5.344-5.84,7.082c-2.575,1.733-5.625,2.736-8.982,2.736c-2.247,0-4.341-0.449-6.254-1.258 c-2.883-1.211-5.35-3.264-7.083-5.833c-1.739-2.575-2.742-5.625-2.742-8.982c0-2.248,0.455-4.341,1.258-6.261 c1.218-2.869,3.264-5.344,5.832-7.083c2.582-1.732,5.632-2.736,8.99-2.736c2.24,0,4.334,0.448,6.254,1.258 c2.876,1.217,5.344,3.27,7.084,5.839c1.739,2.568,2.735,5.625,2.742,8.983C272.079,269.842,271.624,271.935,270.822,273.855z"></path><path d="M256,216.641c-21.631,0-39.182,10.488-39.182,23.437c0,3.86,1.565,7.504,4.348,10.735 c1.686-2.789,3.739-5.391,6.093-7.752c7.659-7.678,17.865-11.906,28.727-11.906c10.896,0,21.089,4.227,28.761,11.918 c2.361,2.348,4.401,4.95,6.086,7.739c2.783-3.231,4.348-6.876,4.348-10.735C295.181,227.129,277.645,216.641,256,216.641z"></path><path d="M421.133,175.968l-8.776,0.448l8.776-0.455c-1.485-29.53-11.451-55.481-25.624-77.453 c-10.641-16.494-23.63-30.808-37.322-43.041C337.64,37.121,315.528,23.45,297.081,14.26c-9.23-4.595-17.537-8.066-24.386-10.434 c-3.424-1.191-6.474-2.107-9.19-2.756c-1.351-0.321-2.622-0.576-3.839-0.762C258.435,0.127,257.271,0,256,0 c-1.137,0-2.181,0.1-3.264,0.247c-2.08,0.294-4.307,0.796-6.828,1.499c-4.703,1.304-10.408,3.317-16.929,6.053 c-11.411,4.782-25.283,11.791-39.877,21.068c-21.871,13.926-45.348,32.948-64.009,57.401c-9.324,12.226-17.43,25.818-23.443,40.793 c-6.007,14.962-9.893,31.309-10.789,48.9c-0.422,8.388-0.656,17.604-0.656,27.476c0,27.556,1.832,60.25,6.622,93.92 c3.592,25.256,8.842,51.06,16.28,75.674c5.572,18.46,12.374,36.252,20.654,52.639c12.441,24.574,28.232,46.064,48.458,61.574 c10.106,7.746,21.316,13.966,33.637,18.213c12.313,4.261,25.724,6.548,40.144,6.542c17.089,0.006,32.76-3.211,46.873-9.103 c12.347-5.15,23.504-12.327,33.483-21.035c17.471-15.257,31.396-35.149,42.559-57.555c16.741-33.616,27.376-73.005,33.924-111.906 c6.535-38.9,8.956-77.313,8.956-108.956C421.795,193.566,421.555,184.349,421.133,175.968z M397.77,294.884 c-3.491,24.534-8.588,49.515-15.705,73.065c-5.33,17.664-11.798,34.527-19.517,49.79c-11.585,22.922-25.992,42.185-43.455,55.555 c-8.742,6.689-18.253,11.946-28.688,15.551c-10.44,3.605-21.831,5.578-34.405,5.578c-14.909-0.007-28.146-2.769-40.111-7.752 c-10.468-4.368-19.979-10.454-28.687-18.059c-15.236-13.277-27.972-31.235-38.392-52.144 c-15.638-31.356-25.985-69.252-32.319-106.983c-6.348-37.723-8.715-75.293-8.708-106.046c0-9.592,0.227-18.527,0.642-26.58 c1.325-26.098,10.026-48.933,22.835-68.825c9.605-14.902,21.531-28.091,34.259-39.462c19.089-17.056,39.997-29.998,57.234-38.58 c8.608-4.288,16.313-7.491,22.3-9.564c2.99-1.03,5.558-1.792,7.518-2.254c0.97-0.234,1.799-0.394,2.408-0.488 c0.602-0.094,1.009-0.114,1.023-0.107c0.014-0.007,0.334,0.013,0.829,0.08c0.963,0.134,2.568,0.468,4.562,1.023 c3.746,1.037,8.869,2.816,14.835,5.324c10.448,4.388,23.537,10.976,37.229,19.691c20.56,13.075,42.492,30.954,59.474,53.233 c8.494,11.137,15.764,23.37,21.102,36.674c5.338,13.31,8.755,27.684,9.552,43.254c0.401,8.053,0.635,16.989,0.635,26.587 C404.218,230.219,402.418,262.163,397.77,294.884z"></path></svg>
+        </div>
+        <h3>産後の骨盤ケアが気になる方へ</h3>
+        <p>出産後の身体の変化について、遠慮なくお話しいただける時間を設けています。</p>
+      </div>
+    </div>
+    <p class="common-note">初回はカウンセリング20分＋施術40分の計60分です。2回目以降も、その日の状態を確認してから施術します。</p>
+  </div>
+</section>
+
+<!-- ================================================================
+     5. 選ばれる理由 ＋ 中盤CTA
+     ================================================================ -->
+<section class="bg-soft" aria-labelledby="reasons-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">REASONS</span>
+      <h2 id="reasons-title">からだ整えラボ円山が<br class="sp-br">選ばれている理由</h2>
+    </div>
+    <div class="grid-3">
+      <div class="reason-card">
+        <div class="reason-num">1</div>
+        <h3>国家資格を持つ院長が担当</h3>
+        <p>柔道整復師の国家資格を持つ院長が、毎回施術を担当します。</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">2</div>
+        <h3>初回20分のカウンセリング</h3>
+        <p>身体の状態と生活習慣を、時間をかけてうかがいます。</p>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">3</div>
+        <h3>仕事帰りにも通いやすい</h3>
+        <p>20時まで営業しており、駐車場も2台ご用意しています。</p>
+      </div>
+    </div>
+
+    <div class="mid-cta">
+      <p>まずは空いている日時を<br class="sp-br">気軽に聞いてみてください</p>
+      <div class="cta-row">
+        <button type="button" class="btn btn-line" data-sample="line">LINEで空き日時を聞く</button>
+        <button type="button" class="btn btn-tel" data-sample="tel">初回60分を電話で予約</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     6. 院長プロフィール（人物・経歴は架空）
+     ================================================================ -->
+<section aria-labelledby="director-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">DIRECTOR</span>
+      <h2 id="director-title">院長紹介</h2>
+    </div>
+    <div class="profile-grid">
+      <figure class="photo profile-photo">
+        <div class="frame">
+          <img src="images/director-800.webp"
+               srcset="images/director-400.webp 400w, images/director-800.webp 800w"
+               sizes="(min-width: 768px) 280px, 320px"
+               alt="白衣を着た院長をイメージしたイラスト" width="800" height="800" loading="lazy">
+        </div>
+        <figcaption>※AIで生成したイメージです</figcaption>
+      </figure>
+      <div>
+        <p class="profile-role">柔道整復師（国家資格）</p>
+        <p class="profile-name">院長 高橋 直人</p>
+        <p class="profile-text">柔道整復師の資格を取得後、臨床10年を経て、からだ整えラボ円山を開業して5年になります。ひとりで運営しているからこそ、毎回同じ人が状態をうかがい、同じ人が施術します。</p>
+        <div class="profile-tags">
+          <span class="badge">柔道整復師</span>
+          <span class="badge">臨床10年</span>
+          <span class="badge">開業5年目</span>
+        </div>
+        <p class="note profile-note">※院長名・経歴・年数はすべて架空の設定です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     7. お客様の声（サンプル文章）
+     ================================================================ -->
+<section class="bg-soft" aria-labelledby="voice-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">VOICE</span>
+      <h2 id="voice-title">ご来院いただいた方の声</h2>
+      <p class="voice-head-tag"><span class="sample-tag">掲載イメージ（サンプル）</span></p>
+    </div>
+    <div class="grid-3">
+      <div class="voice-card">
+        <span class="sample-tag">サンプル</span>
+        <h3 class="voice-title">話を聞いてもらえた安心感</h3>
+        <p class="voice-quote">デスクワークで腰の重さが気になり来院しました。最初に仕事中の姿勢や普段の過ごし方まで聞いてもらえたので、納得して施術を受けられました。</p>
+        <p class="voice-who">40代・会社員</p>
+      </div>
+      <div class="voice-card">
+        <span class="sample-tag">サンプル</span>
+        <h3 class="voice-title">仕事帰りにも相談しやすい</h3>
+        <p class="voice-quote">首から肩の張りが気になっていました。状態を分かりやすく説明し、その日に合わせて進めてもらえるので安心です。20時まで営業しているのも助かります。</p>
+        <p class="voice-who">30代・会社員</p>
+      </div>
+      <div class="voice-card">
+        <span class="sample-tag">サンプル</span>
+        <h3 class="voice-title">産後の悩みを話しやすかった</h3>
+        <p class="voice-quote">産後の身体について、どこに相談すればよいか迷っていました。気になることを丁寧に聞いてもらえて、自分のペースで通えるのがうれしいです。</p>
+        <p class="voice-who">30代・育児中</p>
+      </div>
+    </div>
+    <p class="note voice-note">※架空の店舗を想定したサンプル文章です。実在の方の感想ではありません。</p>
+  </div>
+</section>
+
+<!-- ================================================================
+     8. 料金
+     ================================================================ -->
+<section aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">PRICE</span>
+      <h2 id="price-title">料金について</h2>
+    </div>
+    <table class="price-table">
+      <thead>
+        <tr><th scope="col">プラン</th><th scope="col" style="text-align:right">料金（税込）</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="price-name">初回<span class="price-sub">カウンセリング20分＋施術40分</span></td>
+          <td class="price-amount">6,600円</td>
+        </tr>
+        <tr>
+          <td class="price-name">2回目以降<span class="price-sub">その日の状態を確認してから施術</span></td>
+          <td class="price-amount">5,500円</td>
+        </tr>
+        <tr class="highlight">
+          <td class="price-name">回数券（10回）<span class="price-sub">継続して通いたい方向けのプランです</span></td>
+          <td class="price-amount">49,500円<span class="price-sub">1回あたり4,950円</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note price-note">価格はすべて税込です。※料金は架空の設定です。</p>
+  </div>
+</section>
+
+<!-- ================================================================
+     9. アクセス・院の情報（架空の店舗）
+     ================================================================ -->
+<section class="bg-soft" aria-labelledby="access-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ACCESS</span>
+      <h2 id="access-title">アクセス</h2>
+    </div>
+    <div class="access-grid">
+      <figure class="photo access-photo">
+        <div class="frame">
+          <img src="images/maruyama-access-1000.webp"
+               srcset="images/maruyama-access-500.webp 500w, images/maruyama-access-1000.webp 1000w"
+               sizes="(min-width: 1080px) 500px, (min-width: 768px) 50vw, calc(100vw - 40px)"
+               alt="円山エリアをモチーフにした装飾用イラスト（実際の経路とは異なります）" width="1000" height="750" loading="lazy">
+        </div>
+        <figcaption>※AIで生成したイメージです</figcaption>
+      </figure>
+      <ul class="info-list">
+        <li>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><span class="label">所在地</span><span class="val">札幌市中央区 円山エリア<small>※架空の店舗のため、実在の住所はありません</small></span></div>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <div><span class="label">営業時間</span><span class="val">9:00〜20:00（日曜定休）<small>LINEでのお問い合わせは24時間受付（返信は営業時間内）</small></span></div>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><span class="label">電話番号</span><span class="val">000-0000-0000<small>※サンプルのため、実在の番号ではありません</small></span></div>
+        </li>
+        <li>
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 17h14M6 17V9l1.5-4h9L18 9v8M4 17h1M19 17h1"/><circle cx="7.5" cy="17" r="1.3"/><circle cx="16.5" cy="17" r="1.3"/></svg></span>
+          <div><span class="label">駐車場</span><span class="val">駐車場2台</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     10. よくある質問
+     ================================================================ -->
+<section aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 id="faq-title">よくある質問</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary><span class="q-mark" aria-hidden="true">Q</span>整体は初めてで不安です。<span class="chev" aria-hidden="true">▾</span></summary>
+        <p class="faq-a">初回は20分のカウンセリングから始めます。まずは今の状態やご希望をお聞かせください。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q-mark" aria-hidden="true">Q</span>料金が心配です。<span class="chev" aria-hidden="true">▾</span></summary>
+        <p class="faq-a">初回6,600円、2回目以降5,500円です。回数券（10回49,500円）は継続して通いたい方向けのプランです。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q-mark" aria-hidden="true">Q</span>仕事帰りでも通えますか。<span class="chev" aria-hidden="true">▾</span></summary>
+        <p class="faq-a">9:00〜20:00（日曜定休）で営業しており、駐車場も2台ご用意しています。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q-mark" aria-hidden="true">Q</span>産後どのくらいから通えますか。<span class="chev" aria-hidden="true">▾</span></summary>
+        <p class="faq-a">ご出産の時期やお身体の状態によって異なりますので、まずはカウンセリングでお聞かせください。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     11. クロージング
+     ================================================================ -->
+<section class="closing" aria-labelledby="contact-title">
+  <div class="wrap">
+    <span class="eyebrow">CONTACT</span>
+    <h2 id="contact-title">まずは、話を<br class="sp-br">聞かせてください</h2>
+    <p class="closing-text">電話でもLINEでも、ご予約を承っています。当日の状態やお困りごとを、まずはお聞かせください。</p>
+    <div class="cta-row">
+      <button type="button" class="btn btn-line" data-sample="line">LINEで空き日時を聞く</button>
+      <button type="button" class="btn btn-tel" data-sample="tel">初回60分を電話で予約</button>
+    </div>
+    <p class="closing-detail"><span class="nb">からだ整えラボ円山｜</span><span class="nb">札幌市中央区 円山エリア｜</span><span class="nb">9:00〜20:00（日曜定休）｜</span><span class="nb">駐車場2台</span></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================================
+     フッター
+     ================================================================ -->
+<footer class="site">
+  <div class="wrap">
+    <p class="fbrand">からだ整えラボ円山</p>
+    <p class="disclaimer">このページは、架空の整体院を想定した制作サンプルです。<br>店舗・人物・料金・お客様の声はすべて架空で、画像はAIで生成したイメージです。</p>
+    <p class="credit">Design &amp; Coding: 成田里佳</p>
+  </div>
+</footer>
+
+<!-- 追従CTAバー（スマホのみ） -->
+<div class="mobile-cta is-hidden" id="mobileCta">
+  <button type="button" class="m-line" data-sample="line">LINEで空き日時を聞く</button>
+  <button type="button" class="m-tel" data-sample="tel">初回60分を電話で予約</button>
+</div>
+
+<!-- サンプルリンク用のお知らせ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  // ================================================================
+  // 予約ボタン：制作サンプルのため、実際の予約にはつながないことを表示する
+  // ================================================================
+  (function () {
+    var toast = document.getElementById('toast');
+    var timer;
+    var messages = {
+      line: '制作サンプルのため、LINE予約にはつながりません。',
+      tel: '制作サンプルのため、電話はかかりません。'
+    };
+    document.querySelectorAll('[data-sample]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        toast.textContent = messages[el.dataset.sample];
+        toast.classList.add('is-show');
+        clearTimeout(timer);
+        timer = setTimeout(function () { toast.classList.remove('is-show'); }, 2600);
+      });
+    });
+  })();
+
+  // ================================================================
+  // 追従CTAバー：FVのボタンかクロージングが画面内にある間は隠す
+  // ================================================================
+  (function () {
+    var bar = document.getElementById('mobileCta');
+    var targets = [document.querySelector('.hero .cta-row'), document.querySelector('.closing')];
+    if (!('IntersectionObserver' in window)) { bar.classList.remove('is-hidden'); return; }
+    var visible = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+      bar.classList.toggle('is-hidden', visible.size > 0);
+    });
+    targets.forEach(function (t) { io.observe(t); });
+  })();
+</script>
+
+</body>
+</html>
